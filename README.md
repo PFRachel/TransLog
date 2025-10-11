@@ -40,7 +40,7 @@ Cada modo utiliza las mismas reglas y base de datos, adaptando el análisis sint
    
 ---
 
-##Ejemplo de uso 
+## 💬Ejemplo de uso 
 
 Usuario> Hola!
 
