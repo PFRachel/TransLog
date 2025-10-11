@@ -43,9 +43,11 @@ Cada modo utiliza las mismas reglas y base de datos, adaptando el análisis sint
 ##Ejemplo de uso 
 
 Usuario> Hola!
+
 TransLogEI> Hello!
 
 Usuario> How are you?
+
 TransLogIE> ¿Cómo estás?
 
 ---
