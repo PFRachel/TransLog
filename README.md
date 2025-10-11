@@ -1,12 +1,17 @@
-## TransLog Tarea 1 de Paradigmas de Programación (CE 1106)
+# 🧠 TransLog  
+### Tarea #3 de Paradigmas de Programación (CE1106)  
+**Carrera:** Ingeniería en Computadores  
+
 ---
-##🎯 Objetivos del Proyecto
+
+## 🎯 Objetivos del Proyecto  
+
 - Aplicar los fundamentos del **paradigma lógico** mediante el uso de **Prolog**.  
 - Diseñar e implementar un **sistema experto de traducción Español ↔ Inglés**.  
 - Construir una **base de datos léxica** con hechos para ambos idiomas.  
 - Definir **reglas gramaticales** que reconozcan estructuras de oraciones.  
 - Desarrollar una **interfaz tipo BNF** que permita traducir oraciones completas.  
-- Manipular **listas** como estructuras de datos principales
+- Manipular **listas** como estructuras de datos principales.  
 
 ---
 
@@ -17,10 +22,9 @@ El sistema analiza la estructura gramatical de una oración (sintagma nominal y 
 
 Cuenta con dos modos principales de operación:  
 1. **TransLogEI:** Traducción de Español → Inglés.  
-2. **TransLogIE:** Traducción de Inglés → Español.
+2. **TransLogIE:** Traducción de Inglés → Español.  
 
-
-Cada modo utiliza las mismas reglas y base de datos, adaptando el análisis sintáctico según el idioma origen. 
+Cada modo utiliza las mismas reglas y base de datos, adaptando el análisis sintáctico según el idioma origen.  
 
 ---
 
@@ -36,7 +40,7 @@ Cada modo utiliza las mismas reglas y base de datos, adaptando el análisis sint
    
 ---
 
-# 💬 Ejemplo de Uso
+##Ejemplo de uso 
 
 Usuario> Hola!
 TransLogEI> Hello!
