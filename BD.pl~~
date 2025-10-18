@@ -1,0 +1,125 @@
+/* =========================================================
+   Archivo: BD.pl
+   Proyecto: TransLog (Sistema Experto de Traduccion)
+   Descripcion: Base de datos de palabras en espanol e ingles
+   Estructura: (PalabraES, PalabraEN, Genero, Tipo)
+   Ejemplo: (gato, cat, m, sustantivo)
+   ========================================================= */
+
+% =========================================================
+% --- Pronombres ---
+% =========================================================
+palabra(yo, i, _, pronombre).
+palabra(tú, you, _, pronombre).
+palabra(él, he, _, pronombre).
+palabra(ella, she, _, pronombre).
+palabra(nosotros, we, _, pronombre).
+palabra(ellos, they, _, pronombre).
+% =========================================================
+% --- Sustantivos ---
+% =========================================================
+palabra(gato, cat, m, sustantivo).
+palabra(perro, dog, m, sustantivo).
+palabra(casa, house, f, sustantivo).
+palabra(niño, boy, m, sustantivo).
+palabra(niña, girl, f, sustantivo).
+palabra(maestro, teacher, m, sustantivo).
+palabra(estudiante, student, m, sustantivo).
+palabra(libro, book, m, sustantivo).
+palabra(escuela, school, f, sustantivo).
+palabra(comida, food, f, sustantivo).
+palabra(agua, water, f, sustantivo).
+palabra(coche, car, m, sustantivo).
+palabra(ciudad, city, f, sustantivo).
+palabra(amigo, friend, m, sustantivo).
+palabra(familia, family, f, sustantivo).
+palabra(día, day, m, sustantivo).
+palabra(noche, night, f, sustantivo).
+% =========================================================
+% --- Verbos (en presente) ---
+% =========================================================
+palabra(es, is, _, verbo).
+palabra(soy, am, _, verbo).
+palabra(eres, are, _, verbo).
+palabra(come, eats, _, verbo).
+palabra(corre, runs, _, verbo).
+palabra(juega, plays, _, verbo).
+palabra(estudia, studies, _, verbo).
+palabra(trabaja, works, _, verbo).
+palabra(tiene, has, _, verbo).
+palabra(ve, sees, _, verbo).
+palabra(habla, speaks, _, verbo).
+palabra(lee, reads, _, verbo).
+palabra(duerme, sleeps, _, verbo).
+palabra(vive, lives, _, verbo).
+palabra(escucha, listens, _, verbo).
+
+% =========================================================
+% --- Adverbios ---
+% =========================================================
+palabra(aquí, here, _, adverbio).
+palabra(allí, there, _, adverbio).
+palabra(hoy, today, _, adverbio).
+palabra(siempre, always, _, adverbio).
+palabra(nunca, never, _, adverbio).
+palabra(bien, well, _, adverbio).
+palabra(mal, badly, _, adverbio).
+palabra(ahora, now, _, adverbio).
+% =========================================================
+% --- Conectores y auxiliares ---
+% =========================================================
+palabra(y, and, _, conjuncion).
+palabra(o, or, _, conjuncion).
+palabra(pero, but, _, conjuncion).
+palabra(que, that, _, conjuncion).
+
+% =========================================================
+% --- Artículos ---
+% =========================================================
+palabra(el, the, m, articulo).
+palabra(la, the, f, articulo).
+palabra(los, the, m, articulo).
+palabra(las, the, f, articulo).
+palabra(un, a, m, articulo).
+palabra(una, a, f, articulo).
+
+% =========================================================
+% --- Frases completas (no literales) ---
+% =========================================================
+frase('¿Cómo estás?', 'How are you?').
+frase('¿Cuántos años tienes?', 'How old are you?').
+frase('Buenos días', 'Good morning').
+frase('Buenas noches', 'Good night').
+frase('¿Dónde vives?', 'Where do you live?').
+frase('¿Qué haces?', 'What are you doing?').
+frase('Hasta luego', 'See you later').
+frase('De nada', 'You are welcome').
+frase('Por favor', 'Please').
+frase('Gracias', 'Thank you').
+
+% =========================================================
+% --- Números (0 al 199) ---
+% =========================================================
+
+palabra(cero, zero, _, numero).
+palabra(uno, one, _, numero).
+palabra(dos, two, _, numero).
+palabra(tres, three, _, numero).
+palabra(cuatro, four, _, numero).
+palabra(cinco, five, _, numero).
+palabra(seis, six, _, numero).
+palabra(siete, seven, _, numero).
+palabra(ocho, eight, _, numero).
+palabra(nueve, nine, _, numero).
+palabra(diez, ten, _, numero).
+
+% --- Décadas ---
+palabra(veinte, twenty, _, numero).
+palabra(treinta, thirty, _, numero).
+palabra(cuarenta, forty, _, numero).
+palabra(cincuenta, fifty, _, numero).
+palabra(sesenta, sixty, _, numero).
+palabra(setenta, seventy, _, numero).
+palabra(ochenta, eighty, _, numero).
+palabra(noventa, ninety, _, numero).
+palabra(cien, one_hundred, _, numero).
