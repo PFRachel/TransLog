@@ -23,17 +23,17 @@ frase([de,nada], [you,are,welcome]).
 frase([por,favor], [please]).
 frase([gracias], [thank,you]).
 % =========================================================
-% --- Saludos básicos ---
+% --- Saludos bicos ---
 % =========================================================
 palabra(hola, hello, _, saludo).
 palabra(adios, goodbye, _, saludo).
 palabra(buenos, good, _, saludo).
 palabra(buenas, good, _, saludo).
 % =========================================================
-% --- Sinónimos ---
+% --- Sinimos ---
 % =========================================================
 
-% Sinónimos en español
+% Sinimos en espal
 sinonimo(carro, coche).
 sinonimo(carro, auto).
 sinonimo(carro, vehiculo).
@@ -46,7 +46,7 @@ sinonimo(grande, enorme).
 sinonimo(pequeno, chico).
 sinonimo(feliz, alegre).
 
-% Sinónimos en inglés
+% Sinimos en ingl
 sinonimo(car, automobile).
 sinonimo(car, vehicle).
 sinonimo(beautiful, pretty).
@@ -60,7 +60,7 @@ sinonimo(small, little).
 % =========================================================
 palabra(yo, i, _, pronombre).
 palabra(tu, you, _, pronombre).
-palabra(él, he, _, pronombre).
+palabra(¨¦l, he, _, pronombre).
 palabra(ella, she, _, pronombre).
 palabra(nosotros, we, _, pronombre).
 palabra(ellos, they, _, pronombre).
@@ -100,7 +100,7 @@ palabra(amigo, friend, m, sustantivo).
 palabra(familia, family, f, sustantivo).
 palabra(dia, day, m, sustantivo).
 palabra(noche, night, f, sustantivo).
-palabra(año, year, m, sustantivo).
+palabra(ano, year, m, sustantivo).
 palabra(mes, month, m, sustantivo).
 palabra(semana, week, f, sustantivo).
 palabra(hora, hour, f, sustantivo).
@@ -111,6 +111,25 @@ palabra(jueves, thursday, m, sustantivo).
 palabra(viernes, friday, m, sustantivo).
 palabra(sabado, saturday, m, sustantivo).
 palabra(domingo, sunday, m, sustantivo).
+palabra(lenguaje, language, m, sustantivo).
+palabra(programacion, programming, f, sustantivo).
+palabra(logica, logic, f, sustantivo).
+palabra(lenguajes, languages, m, sustantivo).
+palabra(linguistica, linguistics, f, sustantivo).
+palabra(inteligencia, intelligence, f, sustantivo).
+palabra(sistema, system, m, sustantivo).
+palabra(teorema, theorem, m, sustantivo).
+palabra(prueba, proving, f, sustantivo).
+palabra(patron, pattern, m, sustantivo).
+palabra(comparacion, matching, f, sustantivo).
+palabra(arbol, tree, m, sustantivo).
+palabra(analisis, analysis, m, sustantivo).
+palabra(procesamiento, processing, m, sustantivo).
+
+% --- Propios ---
+palabra(prolog, prolog, _, sustantivo).
+palabra(emily, emily, f, sustantivo).
+palabra(jorge, jorge, m, sustantivo).
 
 % =========================================================
 % --- Verbos (en presente) ---
@@ -136,12 +155,14 @@ palabra(vive, lives, _, verbo).
 palabra(escucha, listens, _, verbo).
 palabra(tengo, have, _, verbo).
 palabra(estudio, study, _, verbo).
-palabra(está, is, _, verbo).
+palabra(esta, is, _, verbo).
 palabra(voy, go, _, verbo).
 palabra(quiere, wants, _, verbo).
 palabra(puede, can, _, verbo).
 palabra(necesita, needs, _, verbo).
 palabra(dice, says, _, verbo).
+palabra(sigue, remains, _, verbo).
+palabra(utilizado, used, _, verbo).
 
 % =========================================================
 % --- Adverbios ---
@@ -159,9 +180,11 @@ palabra(tarde, late, _, adverbio).
 palabra(ya, already, _, adverbio).
 palabra(cuando, when, _, adverbio).
 palabra(donde, where, _, adverbio).
-palabra(cómo, how, _, adverbio).
+palabra(co, how, _, adverbio).
 palabra(si, yes, _, adverbio).
 palabra(no, no, _, adverbio).
+palabra(comunmente, commonly, _, adverbio).
+palabra(asi, thus, _, adverbio).
 
 % =========================================================
 % --- Adjetivos ---
@@ -199,9 +222,16 @@ palabra(esos, those, m, adjetivo).
 palabra(esas, those, f, adjetivo).
 palabra(otro, other, m, adjetivo).
 palabra(otra, other, f, adjetivo).
-
+palabra(asociado, associated, _, adjetivo).
+palabra(primero, first, _, adjetivo).
+palabra(popular, popular, _, adjetivo).
+palabra(computacional, computational, _, adjetivo).
+palabra(experto, expert, m, adjetivo).
+palabra(natural, natural, _, adjetivo).
 % --- Colores ---
-palabra(rojo, red, _, adjetivo).
+
+palabra(roja, red, f, adjetivo).
+palabra(rojo, red, m, adjetivo).
 palabra(azul, blue, _, adjetivo).
 palabra(verde, green, _, adjetivo).
 palabra(amarillo, yellow, _, adjetivo).
@@ -232,6 +262,7 @@ palabra(entre, between, _, preposicion).
 palabra(hacia, toward, _, preposicion).
 palabra(sin, without, _, preposicion).
 palabra(con, with, _, conjugacion).
+palabra(sobre, over, _, preposicion).
 
 
 % =========================================================
